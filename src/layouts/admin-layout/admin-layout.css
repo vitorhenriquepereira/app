@@ -1,0 +1,17 @@
+.sider-logo {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+
+.sider-logo img {
+  width: 3.2rem;
+  margin: 0 8px;
+}
+
+#footerPrincipal {
+  background-color: #053f33;
+  padding: 4px;
+  margin: 0;
+  color: #ffffff;
+}
