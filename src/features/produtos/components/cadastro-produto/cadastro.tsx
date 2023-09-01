@@ -16,7 +16,7 @@ export default function CadastroProfissionais({ onFinish, id }: Props) {
     const onSubmit = (values: any) => {
         if (id) {
             //atribui o id nos valores
-            values = { id, ...values}
+            values = { id, ...values }
             ProdutoContext.edit(id, values)
         } else {
             ProdutoContext.create(values)
@@ -62,8 +62,12 @@ export default function CadastroProfissionais({ onFinish, id }: Props) {
                 label="Valor unitario"
                 name="valor"
                 rules={[{ required: true, message: 'Por favor insira o valor!' }]}
+
             >
-                <InputNumber />
+                <InputNumber
+                    style={{ width: '100%' }} 
+                    precision={2}
+                />
             </Form.Item>
 
             <Form.Item
